@@ -2,6 +2,8 @@ dependencies {
     testCompile project(":components:test-support")
     testCompile "com.squareup.okhttp3:okhttp:3.8.0"
     testCompile "com.jayway.jsonpath:json-path:2.2.0"
+    testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.6.1'
+
 }
 
 test.dependsOn ":applications:allocations-server:assemble"
